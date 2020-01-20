@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tīmekļa aplikācijas izstrāde Latvijas atvērto datu apstrādei un lasīšanai</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div id="top-div" class="alert alert-primary container cont1" role="alert">
+			<form>
+				<p class="display-inline">Sadalīt ar:</p>
+				<input type="radio" id="semicolon-radio" name="split-by" value="semicolon">
+				<label for="semicolon-radio">semikolu</label>
+				<input type="radio" id="comma-radio" name="split-by" value="comma">
+				<label for="comma-radio">komatu</label> <br>
+
+				<input type="file" id="file-input" accept=".csv" hidden>
+				<button type="button" id="custom-input">Izvēlēties datni</button>
+				<span id="custom-text">Nav izvēlēta neviena datne</span>
+			</form>
+		</div>
+
+		<div id="middle-div">
+			<span id="to-hide-span">
+				<div id="table-sheet">
+					<b><span id="text-span">0 - 20</span></b> <br>
+					<button type="button" id="show-prev-button" class="btn btn-primary"><<</button>
+					<button type="button" id="show-next-button" class="btn btn-primary">>></button>
+				</div>
+				<table id="csv-table" class="table table-dark table-striped">
+					<thead id="csv-table-head">
+
+					</thead>
+					<tbody id="csv-table-body">
+
+					</tbody>
+				</table>
+			</span>
+
+			<button type="button" id="hide-show-button" class="btn btn-outline-primary">Slēpt</button>
+		</div>
+
+		<div id="bottom-div">
+			<form id="diagram-form">
+				<select id="x-axis-select" required>
+					<option value hidden disabled selected>Atlasiet neatkarīgos datus</option>
+				</select>
+				<select id="y-axis-select" required>
+					<option value hidden disabled selected>Atlasiet atkarīgos datus</option>
+				</select>
+				<select id="diagram-type-select" required>
+					<option value hidden disabled selected>Izvēlieties diagrammas veidu</option>
+					<option value="line">Līniju</option>
+					<option value="bar">Stabiņu</option>
+					<option value="horizontalBar">Joslu</option>
+					<option value="radar">Radara</option>
+					<option value="pie">Sektoru</option>
+					<option value="doughnut">Riņķu</option>
+					<option value="polarArea">Polārā apgabala</option>
+				</select>
+				<button class="create-button">Izveidot</button>
+			</form>
+		</div>
+
+	</div>
+
+	<!-- exit -->
+
+	<script src="./script.js"></script>
+
+</body>
+
+</html>

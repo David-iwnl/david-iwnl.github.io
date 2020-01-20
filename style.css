@@ -1,0 +1,111 @@
+body {
+	background-color: #CAFAFE;
+	margin-top: 1rem;
+}
+
+.cont1 {
+	width: 50%;
+}
+
+#top-div {
+	text-align: center;
+}
+
+#custom-input {
+	background-color: #78BAFF;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#custom-input:hover {
+	background-color: #469EFC;
+}
+
+#table-sheet {
+	align-content: center;
+}
+
+#show-prev-button, #show-next-button {
+	width: 2rem;
+	height: 1.5rem;
+	padding: 0;
+}
+
+#x-axis-select {
+	width: 202px;
+}
+
+#y-axis-select {
+	width: 185px;
+}
+
+#diagram-type-select {
+	width: 224px;
+}
+
+select {
+	border: 1px solid rgb(52, 131, 235);
+  border-radius: 5px;
+  background-color: rgb(239, 252, 255);
+}
+
+.create-button {
+	margin-left: 10px;
+	border: 1px solid rgb(52, 131, 235);
+  border-radius: 5px;
+  background-color: rgb(239, 252, 255);
+}
+
+div:not(.diagram-div) {
+	margin-bottom: 1rem;
+}
+
+.display-inline {
+	display: inline;
+}
+
+#middle-div, #bottom-div {
+	display: none;
+}
+
+#middle-div {
+	width: auto;
+}
+
+td {
+	height: 2rem;
+}
+
+#hide-show-button {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+}
+
+select {
+	color: gray;
+}
+
+option {
+	color: black;
+}
+
+.diagram-div {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+p:not(.display-inline) {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.delete-button {
+	border: 1px solid rgb(52, 131, 235);
+  border-radius: 5px;
+  background-color: rgb(239, 252, 255);
+}
